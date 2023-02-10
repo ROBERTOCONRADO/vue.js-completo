@@ -35,16 +35,23 @@
 
 
   <div id="app">
-    <input type="color" v-model="btn.background">
     <label for="width">Width</label>
     <input id="width" type="text" v-model="btn.width">
     <label for="height">Height</label>
     <input id="height" type="text" v-model="btn.height">
-    <label for="fontSize">Font Size</label>
+    <label for="fontSize">Font-size</label>
     <input id="fontSize" type="text" v-model="btn.fontSize">
-    <label for="fontFamily">Font Family</label>
+    <label for="fontFamily">Font-family</label>
     <input id="fontFamily" type="text" v-model="btn.fontFamily">
-    {{btn.background}}
+    <label for="textAlign">Text-Align</label>
+    <input id="textAlign" type="text" v-model="btn.textAlign">
+    <label for="background">Background</label>
+    <input id="background" type="text" v-model="btn.background">
+    <label for="color">Color</label>
+    <input id="color" type="text" v-model="btn.color">
+    <label for="borderRadius">Border-Radius</label>
+    <input id="borderRadius" type="text" v-model="btn.borderRadius">
+ 
     <a :style="btn" href="">Clique Aqui</a>
   </div>
 
@@ -57,7 +64,11 @@
           width: "100px",
           height: "40px",
           fontSize: "20px",
-          fontFamily: "monospace"
+          fontFamily: "monospace",
+          textAlign: "center",
+          background: "black",
+          color: "red",
+          borderRadius: "2px",
         }
       }
     });
@@ -66,10 +77,11 @@
   <style>
     label {
       display: block;
+      margin-top: 10px;
     }
 
     a {
-      margin-top: 100px;
+      margin-top: 30px;
       display: block;
     }
   </style>
