@@ -31,17 +31,19 @@
 
   <div id="app">
     <tempo-hoje></tempo-hoje>
+    <acao-hoje></acao-hoje>
   </div>
 
   <script type="module">
     import TempoHoje from "./TempoHoje.js";
+    import AcaoHoje from "./AcaoHoje.js";
 
     Vue.component("TempoHoje", TempoHoje);
 
     const vm = new Vue({
       el: "#app",
       components: {
-        TempoHoje
+        AcaoHoje
       }
     })
   </script>
